@@ -1,0 +1,152 @@
+<!-- Test Push to GitHub -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: #eff1ef">
+    <div style="background-color: #616f9e">
+        <hr>
+        <br>
+        <h1 style="text-align: center;">Windows Form Application Blazor Hybrid</h1>
+        <br>
+        <hr>
+    </div>
+    <div>
+        <p style="text-indent: 20px;">1. The first thing to do is check and make sure you have what Visual Studio needs
+            in order for you to create these applications.</p>
+        <p style="text-indent: 40px;">A. Run <strong>"Visual Studio Installer"</strong></p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step1.png"></p>
+        <p style="text-indent: 40px;">B. Whichever version of Visual Studio you are using, click on the “Modify” button.
+        </p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step2.png"></p>
+        <p style="text-indent: 40px;">C. You want to make sure you have the following installed.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step3.png"></p>
+        <p style="text-indent: 60px;">i. If not, check the box and have it installed.</p>
+        <p style="text-indent: 40px;">D. To install, check the box, then click, “Modify” button.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step4.png"></p>
+        <p style="text-indent: 40px;">E. It will start to install.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step5.png"></p>
+        <p style="text-indent: 20px;">2. Start up Visual Studio</p>
+        <p style="text-indent: 40px;">a. Click <strong>“Create a new project”</strong>.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step6.png"></p>
+        <p style="text-indent: 40px;">b. Type <strong>“Windows Forms App”</strong>. Then select the one shown below.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step7.png"></p>
+        <p style="text-indent: 40px;">c. Enter a name for your project, then click the <strong>“Next”</strong> button
+        </p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step8.png"></p>
+        <p style="text-indent: 40px;">d. Select the Framework, then click the “Create” button.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step9.png"></p>
+        <p style="text-indent: 40px;">e. It should pull up an empty form.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step10.png"></p>
+        <p style="text-indent: 20px;">3. Now to install a NuGet package. Click on the “Tools” menu at the top of the
+            Visual Studio window, then select “NuGet Package Manager”, then finally “Manage NuGet Packages for
+            Solution”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step11.png"></p>
+        <p style="text-indent: 20px;">4. Select the “Browse” tab. Make sure that the package source is “nuget.org”. Then
+            search for “WebView.WindowsForms”. The following one is what you want.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step12.png"></p>
+        <p style="text-indent: 20px;">5. This is the version that the video suggested so I’m using it for now. Version:
+            6.0.540. Check the “WinFormsBlazorApp”, set version to “6.0.540”, then click the “Install” button.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step13.png"></p>
+        <p style="text-indent: 20px;">6. Click, “I Accept”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step14.png"></p>
+        <p style="text-indent: 20px;">7. Once installed, it should show up under “Dependencies” in the Solution Explorer
+        </p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step15.png"></p>
+        <p style="text-indent: 20px;">8. Now right click on your Project name, then select “Edit Project File”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step16.png"></p>
+        <p style="text-indent: 20px;">9. Now change "Microsoft.NET.Sdk" to "Microsoft.NET.Sdk.Razor"</p>
+        <p style="text-indent: 40px;">a. Before</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step17.png"></p>
+        <p style="text-indent: 40px;">b. After</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step18.png"></p>
+        <p style="text-indent: 20px;">10. Now right click on your project name again, then select “Build”. Could be the
+            same under the build menu option, but this is how the video did it.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step19.png"></p>
+        <p style="text-indent: 20px;">11. Now right click on your project name again, then select “Add”, then select
+            “New Item”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step20.png"></p>
+        <p stype="text-indent: 20px;">12. You should now be able to see “Razor Component” as an option.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step21.png"></p>
+        <p style="text-indent: 20px;">13. The first thing that you will want to do is create a “_Imports.razor”
+            component.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step22.png"></p>
+        <p style="text-indent: 20px;">14. Now highlight everything and delete it from the “_Imports.razor” so that it
+            will be empty.</p>
+        <p style="text-indent: 40px;">a. Before</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step23.png"></p>
+        <p style="text-indent: 40px;">b. After</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step24.png"></p>
+        <p style="text-indent: 20px;">15. Now add the following using statement.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step25.png"></p>
+        <p style="text-indent: 20px;">16. Now right click on your app name again, select “Add”, then select “New
+            Folder”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step26.png"></p>
+        <p style="text-indent: 40px;">a. Name it “wwwroot”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step27.png"></p>
+        <p style="text-indent: 40px;">b. Now right click on the “wwwroot” folder, select “Add”, then select “New Item”
+        </p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step28.png"></p>
+        <p style="text-indent: 40px;">c. Add an “HTML Page” called “index.html”</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step29.png"></p>
+        <p style="text-indent: 40px;">d. You should see something like the following.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step30.png"></p>
+        <p style="text-indent: 40px;">e. The video had me add some code to this file.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step31.png"></p>
+        <p style="text-indent: 20px;">17. Now right click on the “wwwroot” folder, click “Add”, then click on “New
+            Folder”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step32.png"></p>
+        <p style="text-indent: 40px;">a. Name the folder “css”</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step33.png"></p>
+        <p style="text-indent: 40px;">b. Now right click on the “css” folder, click “Add”, then click on “New Item”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step34.png"></p>
+        <p style="text-indent: 40px;">c. Search for “css”. Select “Style Sheet”, then name it “app.css”. Then click the
+            “Add” button.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step35.png"></p>
+        <p style="text-indent: 40px;">d. This is what the index.html points to.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step36.png"></p>
+        <p style="text-indent: 40px;">e. This is what the instructor added to the app.css style sheet.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step37.png"></p>
+        <p style="text-indent: 20px;">18. Now we are going to add a “Razor Component”. Right click on the App name,
+            select “Add”, then select “New Item”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step38.png"></p>
+        <p style="text-indent: 40px;">a. Add Razor Component named “Counter.razor”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step39.png"></p>
+        <p style="text-indent: 40px;">b. Add the following code to the Counter.razor page.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step40.png"></p>
+        <p style="text-indent: 20px;">19. Now to open up your Windows Form Designer page. Right click on your form, then
+            select “View Designer”.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step41.png"></p>
+        <p style="text-indent: 40px;">a. Now if you go over to tools under WebView2 you will see a couple of options.
+            The BlazorWebView is the one you want.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step42.png"></p>
+        <p style="text-indent: 40px;">b. Drag and drop the “BlazorWebView” one over to the form.</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step43.png"></p>
+        <p style="text-indent: 40px;">c. Right click on “WebView2” and the click on “Properties.”</p>
+        <p style="text-indent: 50px;"> <img src="PICS/Step44.png"></p>
+        <p style="text-indent: 60px;">i. Under “Properties” look for “Dock”. Currently it saye “None”. You want to
+            change this so that it fills the form page.</p>
+        <p style="text-indent: 70px;"> <img src="PICS/Step45.png"></p>
+        <p style="text-indent: 60px;">ii. To fill the page select the middle option.</p>
+        <p style="text-indent: 70px;"> <img src="PICS/Step46.png"></p>
+        <p style="text-indent: 60px;">iii. This is what it should look like when the WebView2 fills the form.</p>
+        <p style="text-indent: 70px;"> <img src="PICS/Step47.png"></p>
+        <p style="text-indent: 20px;">20. At the top of the “Form1.cs” add the following using statements.</p>
+        <p style="text-indent: 40px;">a. Right click on the “Form1.cs”, then click on “View Code”.</p>
+        <p style="text-indent: 60px;"> <img src="PICS/Step48.png"></p>
+        <p style="text-indent: 40px;">b. Now add the using statements at the top.</p>
+        <p style="text-indent: 60px;"> <img src="PICS/Step49.png"></p>
+        <p style="text-indent: 40px;">c. Now add the following lines of code.</p>
+        <p style="text-indent: 60px;"> <img src="PICS/Step50.png"></p>
+        <p style="text-indent: 20px">21. Now assuming that everything is setup properly, you should be able to run the
+            program. Run “Build” before you do.</p>
+        <p style="text-indent: 60px;"> <img src="PICS/Step51.png"></p>
+    </div>
+</body>
+
+</html>
